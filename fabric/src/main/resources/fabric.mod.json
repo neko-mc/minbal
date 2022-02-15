@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "minebal",
+  "version": "${version}",
+  "name": "Minecraft Ballistics",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Sascha T. <info@sascha-t.de>"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "Insert License Here",
+  "icon": "assets/examplemod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.saschat.minebal.fabric.MinecraftBallisticsFabric"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18",
+    "architectury": ">=3.6.15"
+  }
+}
