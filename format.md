@@ -61,6 +61,16 @@
 {
   "name": "MODEL_ID",
   "type": "JAVA", // Maybe support GeckoLib models in the future...,
-  "data": "org.example.pack.Model"
+  "data": "org.example.pack.CustomModel"
+}
+```
+
+# Attachment
+```json5 
+{
+    "name": "ATTACHMENT_ID",
+    "group": "minbal:scope", // Gun.attachments
+    "type": "SCOPE", // one of ["SCOPE", "UNDERBARREL", "BARREL", "SIDE", "STOCK"]
+    "class": "org.example.pack.CustomAttachment"
 }
 ```
