@@ -1,0 +1,5 @@
+models have map<identifier, modelpart>
+
+animations move by identifier
+
+considerations: multi-reload animations (shotgun shells loaded individually)

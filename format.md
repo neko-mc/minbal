@@ -60,8 +60,32 @@
 ```json5
 {
   "name": "MODEL_ID",
-  "type": "JAVA", // Maybe support GeckoLib models in the future...,
-  "data": "org.example.pack.CustomModel"
+  "type": "JSON", // Maybe support GeckoLib and/or Java models in the future...,
+  "animations": "PACK_ID:animations",
+  "data": [{
+    "name": "PART_NAME",
+    "type": "", // BOX ([x, y, w, h]), TRIANGLES ([ 3*[x, y, z] ]) 
+    "data": []
+    // PARTS DATA TBA
+  }]
+}
+```
+
+# Animations
+```json5
+{
+  "name": "ANIMATIONS_ID",
+  "data": {
+    "fire": [{
+        "time": 0.00, // in seconds
+        "part": "example_part",
+        "translation": [0.0, 0.0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "scale": [0.0, 0.0, 0.0],
+        "opacity": 1.0,
+        "smooth": "LINEAR"
+      }]
+  }
 }
 ```
 
