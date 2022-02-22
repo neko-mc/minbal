@@ -12,6 +12,8 @@ public class JSONModel extends ModelJSON {
         public String name;
         @Expose
         public String type;
+        @Expose
+        public double[] uv;
 
         public static RuntimeTypeAdapterFactory getAdapter() {
             return RuntimeTypeAdapterFactory.of(

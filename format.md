@@ -1,5 +1,5 @@
 ## All ID's may specify a namespace (for hooking into common calibers, etc..)
-# Pack
+# Pack (/pack.json)
 
 ```json5
 {
@@ -11,7 +11,7 @@
 }
 ```
 
-# Gun
+# Gun (/guns/NAME.json)
 ```json5
 {
   "name" : "GUN_ID", // Id of the gun, identifier: PACK_ID:GUN_ID
@@ -33,11 +33,12 @@
 }
 ```
 
-# Bullet
+# Bullet (/bullets/NAME.json)
 ```json5
 {
   "name": "BULLET_ID", 
   
+  "caliber":  "PACK_ID:caliber",
   "baseDamage": 20.0, // Base damage of the projectile. This data is passed to the entity.
   "baseVelocity": 10.0, // Base velocity in b/s. This data is passed to the entity.
   "baseSpread": 1.0, // Base spread. This data is passed to the entity as well.
@@ -48,7 +49,7 @@
 }
 ```
 
-# Entity
+# Entity (/entities/NAME.json)
 ```json5
 {
   "name": "ENTITY_ID",
@@ -56,22 +57,24 @@
 }
 ```
 
-# Model
+# Model (/models/NAME.json)
 ```json5
 {
   "name": "MODEL_ID",
   "type": "JSON", // Maybe support GeckoLib and/or Java models in the future...,
   "animations": "PACK_ID:animations",
+  "texture": "texture", // JSON ONLY
   "data": [{
     "name": "PART_NAME",
     "type": "", // BOX ([x, y, w, h]), TRIANGLES ([ 3*[x, y, z] ]) 
-    "data": []
+    "data": [],
+    "uv": [] // [u, v]
     // PARTS DATA TBA
   }]
 }
 ```
 
-# Animations
+# Animations (/animations/NAME.json)
 ```json5
 {
   "name": "ANIMATIONS_ID",

@@ -7,6 +7,8 @@ public class ModelJSON {
     @Expose
     public String name;
     @Expose
+    public String texture;
+    @Expose
     public String type;
     @Expose
     public String animations;
